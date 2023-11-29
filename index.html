@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official website for OSN">
+    <meta name="keywords" content="OSN, Gao Erxuan, music, rap">
+    <title>OSN - Official Website</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" defer src="main.js"></script>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <!-- Fan Letter Pop Up Form -->
+            <button class="open-button" onclick="openForm()">Open Form</button>
+
+            <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h1>Login</h1>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+            </div>
+            <!--Navigation Menu-->
+            <nav class="fixed" id="nav">
+                <ul>
+                    <li><a href="index.html"><img src="images/logo-white.png" alt="OSN Banner" width="40%"></a></li>
+                    <li><a href="#page1">UPCOMING EVENTS</a></li>
+                    <li><a href="#page2">MUSIC</a></li>
+                    <li><a href="#page3">PHOTOS</a></li>
+                    <li><a href="#page4">ALBUM</a></li>
+                    <li><a href="https://www.facebook.com/osnrapper/" target="_blank">SOCIAL MEDIA</a></li>
+                    <p style="font-size: 13px; ">MADE BY HUI HUI | DIPLOMA<br> IN IMMERSIVE MEDIA</p>
+                </ul>
+                
+            </nav>
+        </header>
+        <main>
+            <!--Home Page-->
+            <div>
+                <section>
+                <img src="images/banner.jpg" class="cover" alt="OSN Banner" width="100%">
+                <img style="float:left;" class="margin" src="images/photo7.jpg" class="cover" alt="OSN Banner" width="50%">
+                <img class="margin" src="images/album1.jpg" class="cover" alt="OSN Banner" width="50%">
+                <img class="center" class="margin" src="images/seats.png" class="cover" alt="OSN Banner" width="50%" style="padding-bottom: 30px;">
+                <img class="margin" src="images/photo6.jpg" class="cover" alt="OSN Banner" width="100%">
+                </section>
+                <section>
+                <!--Newsletter section-->
+                <form action="/action_page.php">
+                    <div>
+                      <h2 class="center">Subscribe to our Newsletter</h2>
+                      <p class="center">Subscribe to our newsletter to get the latest news about OSN GAOERXUAN.</p>
+                    </div>
+                  
+                    <div>
+                      <input type="text" placeholder="Name" name="name" required>
+                      <input type="text" placeholder="Email address" name="mail" required>
+                      <label>
+                        <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+                      </label>
+                    </div>
+                  
+                    <div>
+                      <input type="submit" value="Subscribe">
+                    </div>
+                  </form>
+                </section>
+            </div>
+            <!--Page 1 - Upcoming Event-->
+            <div id="page1" class="page">
+                <!-- Section 1 -->
+                <section id="section1">
+                    <!--Left Column-->
+                    <img src="images/logo-white.png" alt="OSN Logo" width="30%">
+                    <h1>OSN</h1>
+                    <h1>高爾宣</h1>
+                    <p>OSN 高爾宣, Gao Erxuan a Taiwanese male singer and rap singer , mostly composed of rap and lyrical love songs, at the end of 2018 with Lou Junshuo, ChrisFlow The four members of RED Rui formed the rap group CHING G SQUAD . Won the Best Asian Newcomer Award at the Mnet Asian Music Awards 2019. OSN made his debut in 2018 with "Everybody Bounce".</p>
+
+                    <!--Right Column-->
+                    <img src="images/mobile_banner.jpeg" alt="OSN Poster 1" width="100%">
+                </section>
+
+                <!-- Section 2 -->
+                <section id="section2">
+                    <!--Left Column-->
+                    <img src="images/album1.jpg" alt="OSN Album 1" width="100%">
+
+                    <!--Right Column-->
+                    <h1>Profile</h1>
+                    <ul>
+                        <li>Name: OSN 高爾宣</li>
+                        <li>Birthday: June 14, 1997</li>
+                        <li>Birthplace: Taiwan</li>
+                        <li>Place of residence: Taiwan Muzha, Wenshan District, Taipei , Taiwan</li>
+                        <li>Occupation: Singer , songwriter , composer</li>
+                        <li>Active age: 2018-present</li>
+                        <li>Religion: Christian</li>
+                        <li>Family: Gao Erxian (brother)</li>
+                        <li>Record company: SKR Presents Tao Shan Music</li>
+                        <li>Agency: SKR Presents Tao Shan Music</li>
+                        <li>Related groups/bands: G22, Golf, CHING G SQUAD</li>
+                    </ul>
+                </section>
+
+                <!-- Section 3 -->
+                <section id="section3">
+                    <h2>UPCOMING EVENTS</h2>
+                    <hr>
+                    <table>
+                        <tr class="event_size">
+                            <th>DATE</th>
+                            <th>EVENT</th>
+                            <th>LOCATION</th>
+                        </tr>
+                        <tr class="event_size">
+                            <td>2023/11/11, 19:30</td>
+                            <td>2023 Gao Erxuan OSN-CTRL+N "New Vision" concert</td>
+                            <td>Taipei Pop Music Center </td>
+                        </tr>
+                        <tr class="event_size">
+                            <td>2023/9/2, 19:30</td>
+                            <td>OSN Gao Erxuan 2023 Canada Tour</td>
+                            <td>Toronto Pavilion</td>
+                        </tr>
+                        <tr class="event_size">
+                            <td>2023/9/1, 19:30</td>
+                            <td>OSN Gao Erxuan 2023 Canada Tour</td>
+                            <td>Enso Vancouver</td>
+                        </tr>
+                        <tr class="event_size">
+                            <td>2023/4/16, 19:30</td>
+                            <td>OSN Gao Erxuan 2023 UK Tour</td>
+                            <td>London</td>
+                        </tr>
+                        <tr class="event_size">
+                            <td>2023/4/15, 19:30</td>
+                            <td>OSN Gao Erxuan 2023 UK Tour</td>
+                            <td>Manchester</td>
+                        </tr>
+                        <tr class="event_size">
+                            <td>2023/4/14, 19:30</td>
+                            <td>OSN Gao Erxuan 2023 UK Tour</td>
+                            <td>Birmingham</td>
+                        </tr>
+                        <tr class="event_size">
+                            <td>2023/4/5, 18:30</td>
+                            <td>AXA presents: SPACE MUSIC FESTIVAL</td>
+                            <td>West Kowloon Cultural District</td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section id="section4">
+                    <!--Left Column-->
+                    <h2>LATEST MUSIC</h2>
+                    <hr>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xpifVn_DN-A?si=xCGG-OMpdpk_oaZz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                    <!--Right Column-->
+                    <a href="https://www.youtube.com/watch?v=gtnD1o1l8ZU&source_ve_path=MTc4NDI0&ab_channel=%E9%AB%98%E7%88%BE%E5%AE%A3OSN" target="_blank">高爾宣OSN-Good Evening (Official Music Video)</a>
+
+                    <br>
+
+                    <!--Left Column-->
+                    <a href="https://www.youtube.com/watch?v=v32e9oWC29s&ab_channel=%E9%AB%98%E7%88%BE%E5%AE%A3OSN" target="_blank">高爾宣OSN ft.李浩瑋 Howard Lee-Drowning (Official Music Video)</a>
+
+                    <!--Right Column-->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AFXpJXnlKi4?si=u2p9Pbe_yQfP4-Xn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </section>
+            </div>
+            <!-- Page 2 - Album -->
+            <div id="page2" class="page">
+                
+            </div>
+
+            <!-- Page 3 - Album -->
+            <div id="page3" class="page">
+                
+            </div>
+
+            <!-- Page 4 - Album -->
+            <div id="page4" class="page">
+                
+            </div>
+
+        </main>
+    </div>
+</body>
+
+</html>
