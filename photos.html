@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official website for OSN">
+    <meta name="keywords" content="OSN, Gao Erxuan, music, rap">
+    <title>OSN - Official Website</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" defer src="main.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <!-- Fan Letter Pop Up Form -->
+            <button class="open-button" onclick="openForm()">Send A Fan Letter</button>
+
+            <div class="form-popup" id="fanLetterForm">
+                <form class="form-container" onsubmit="submitForm(); return false;">
+                    <h1>Fan Letter</h1>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="message"><b>Message</b></label>
+                    <textarea placeholder="Enter Your Message To OSN" name="message" required></textarea>
+
+                    <button type="submit" class="btn">Submit</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+            <!--Navigation Menu-->
+            <nav class="sidebar">
+                <ul style="padding:0px;">
+                    <li><a href="index.html"><img src="images/logo-white.png" alt="OSN Banner" width="60%"></a></li>
+                    <div>
+                        <li><a href="index.html#section1">OSN</a></li>
+                        <li><a href="index.html#section2">UPCOMING EVENTS</a></li>
+                        <li><a href="index.html#section3">MUSIC</a></li>
+                        <li><a href="photos.html">PHOTOS</a></li>
+                        <li><a href="album.html">ALBUM</a></li>
+                        <li><a href="https://www.facebook.com/osnrapper/" target="_blank">SOCIAL MEDIA</a></li>
+                        <hr style="border:none;height:1px;background-color:grey" width="50%">
+                        <li><p style="font-size: 13px;color: #818181;">MADE BY HUI HUI | DIPLOMA<br> IN IMMERSIVE MEDIA</p></li>
+                    </div>
+                </ul>
+                
+            </nav>
+        </header>
+
+        <main class="main">
+            <!-- Slideshow -->
+                <div class="slideshow-container">
+                    <div class="mySlides">
+                        <img class="slideshow-img" src="images/photo16.jpg" alt="Slideshow 1">
+                    </div>
+                    <div class="mySlides">
+                        <img class="slideshow-img" src="images/photo11.jpg" alt="Slideshow 2">
+                    </div>
+                    <div class="mySlides">
+                        <img class="slideshow-img" src="images/photo12.jpg" alt="Slideshow 3">
+                    </div>
+                    <div class="mySlides">
+                        <img class="slideshow-img" src="images/photo13.jpg" alt="Slideshow 4">
+                    </div>
+                    <div class="mySlides">
+                        <img class="slideshow-img" src="images/photo14.jpg" alt="Slideshow 5">
+                    </div>
+                    <div class="mySlides">
+                        <img class="slideshow-img" src="images/photo15.jpg" alt="Slideshow 6">
+                    </div>
+
+                    <!-- Navigation arrows -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+            <!-- photo gallery -->
+            <section id="photoGallery">
+                <!-- Photo Gallery -->
+                <div class="gallery-item">
+                    <img src="images/photo1.jpg" alt="Photo 1" width="700">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photo2.jpeg" alt="Photo 2" width="700">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photo3.jpg" alt="Photo 3" width="700">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photo4.jpg" alt="Photo 4" width="700">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photo5.jpg" alt="Photo 5" width="700">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photo6.jpg" alt="Photo 6" width="700">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photo8.jpg" alt="Photo 7" width="700">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photo9.jpg" alt="Photo 8" width="700">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photo10.jpg" alt="Photo 9" width="700">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photo17.jpg" alt="Photo 10" width="700">
+                </div>
+                
+            </section>
+
+        </main>
+    </div>
+</body>
+
+</html>

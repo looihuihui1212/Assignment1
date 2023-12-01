@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official website for OSN">
+    <meta name="keywords" content="OSN, Gao Erxuan, music, rap">
+    <title>OSN - Official Website</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" defer src="main.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <!-- Fan Letter Pop Up Form -->
+            <button class="open-button" onclick="openForm()">Send A Fan Letter</button>
+
+            <div class="form-popup" id="fanLetterForm">
+                <form class="form-container" onsubmit="submitForm(); return false;">
+                    <h1>Fan Letter</h1>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="message"><b>Message</b></label>
+                    <textarea placeholder="Enter Your Message To OSN" name="message" required></textarea>
+
+                    <button type="submit" class="btn">Submit</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+            <!--Navigation Menu-->
+            <nav class="sidebar">
+                <ul style="padding:0px;">
+                    <li><a href="index.html"><img src="images/logo-white.png" alt="OSN Banner" width="60%"></a></li>
+                    <div>
+                        <li><a href="index.html#section1">OSN</a></li>
+                        <li><a href="index.html#section2">UPCOMING EVENTS</a></li>
+                        <li><a href="index.html#section3">MUSIC</a></li>
+                        <li><a href="photos.html">PHOTOS</a></li>
+                        <li><a href="album.html">ALBUM</a></li>
+                        <li><a href="https://www.facebook.com/osnrapper/" target="_blank">SOCIAL MEDIA</a></li>
+                        <hr style="border:none;height:1px;background-color:grey" width="50%">
+                        <li><p style="font-size: 13px;color: #818181;">MADE BY HUI HUI | DIPLOMA<br> IN IMMERSIVE MEDIA</p></li>
+                    </div>
+                </ul>
+                
+            </nav>
+        </header>
+
+        <main class="main">
+            <!-- Section for album showcase -->
+            <section id="albumGallery">
+                <!-- Album 1 -->
+                <div class="album-item">
+                    <img src="images/album1.jpg" alt="Album 1">
+                    <div class="album-info">
+                        <h3>Journey #OSNRAPII</h3>
+                        <p>詞 : 高爾宣OSN              
+                            <br> 曲 : 高爾宣OSN                  
+                            <br> 編制：陶山 Skot Suyama</p>                    
+                        </div>
+                </div>
+
+                <!-- Album 2 -->
+                <div class="album-item">
+                    <img src="images/album2.jpg" alt="Album 2">
+                    <div class="album-info">
+                        <h3>Somebody Else</h3>
+                        <p>詞 : 高爾宣OSN              
+                            <br> 曲 : 高爾宣OSN                  
+                            <br> 編制：陶山 Skot Suyama</p>                    
+                        </div>
+                </div>
+
+                <!-- Album 3 -->
+                <div class="album-item">
+                    <img src="images/album3.jpg" alt="Album 3">
+                    <div class="album-info">
+                        <h3>NONAME</h3>
+                        <p>詞 : 高爾宣OSN              
+                           <br> 曲 : 高爾宣OSN                  
+                           <br> 編制：陶山 Skot Suyama</p>
+                    </div>
+                </div>
+
+                <!-- Album 4 -->
+                <div class="album-item">
+                    <img src="images/album4.jpg" alt="Album 4">
+                    <div class="album-info">
+                        <h3>Without You</h3>
+                        <p>詞 : 高爾宣OSN              
+                            <br> 曲 : 高爾宣OSN                  
+                            <br> 編制：陶山 Skot Suyama</p>                    
+                        </div>
+                </div>
+
+                <!-- Album 5 -->
+                <div class="album-item">
+                    <img src="images/album5.jpg" alt="Album 5">
+                    <div class="album-info">
+                        <h3>MIZEZHAOZHE</h3>
+                        <p>詞 : 高爾宣OSN              
+                            <br> 曲 : 高爾宣OSN                  
+                            <br> 編制：陶山 Skot Suyama</p>                    
+                        </div>
+                </div>
+
+                <!-- Album 6 -->
+                <div class="album-item">
+                    <img src="images/album6.jpg" alt="Album 6">
+                    <div class="album-info">
+                        <h3>Last Time</h3>
+                        <p>詞 : 高爾宣OSN              
+                            <br> 曲 : 高爾宣OSN                  
+                            <br> 編制：陶山 Skot Suyama</p>                    
+                        </div>
+                </div>
+
+                <!-- Album 7 -->
+                <div class="album-item">
+                    <img src="images/album7.jpg" alt="Album 7">
+                    <div class="album-info">
+                        <h3>Everybody Bounce</h3>
+                        <p>詞 : 高爾宣OSN              
+                            <br> 曲 : 高爾宣OSN                  
+                            <br> 編制：陶山 Skot Suyama</p>                    
+                        </div>
+                </div>
+
+                <!-- Album 8 -->
+                <div class="album-item">
+                    <img src="images/album8.jpg" alt="Album 8">
+                    <div class="album-info">
+                        <h3>#OSNRAPI</h3>
+                        <p>詞 : 高爾宣OSN              
+                            <br> 曲 : 高爾宣OSN                  
+                            <br> 編制：陶山 Skot Suyama</p>                    
+                        </div>
+                </div>
+
+                <!-- Album 9 -->
+                <div class="album-item">
+                    <img src="images/album9.jpg" alt="Album 9">
+                    <div class="album-info">
+                        <h3>OSNUK2023</h3>
+                        <p>詞 : 高爾宣OSN              
+                            <br> 曲 : 高爾宣OSN                  
+                            <br> 編制：陶山 Skot Suyama</p>                    
+                        </div>
+                </div>
+                
+            </section>
+
+        </main>
+    </div>
+</body>
+
+</html>
