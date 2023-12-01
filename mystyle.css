@@ -1,3 +1,4 @@
+@media screen and (min-width: 800px) {
 /* Dynamic Navigation */
 html, body {
   width: 100%;
@@ -534,18 +535,101 @@ span.price {
   margin-top: 10px;
 }
 
-/*RESPONSIVE CSS for mobile*/
+}
+/*-------------------------------RESPONSIVE CSS for mobile--------------------------------*/
 @media screen and (max-width: 800px) {
-  .column {
-    width: 100%; /* Make columns full-width on smaller screens */
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Alumni Sans', sans-serif;
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
+    text-align: center;
   }
 
-  .titleText {
-    padding: 80px 20px 0px 20px; /* Adjust padding for smaller screens */
+  .form-popup, .open-button, .slideshow-container{
+    display: none;
+  }
+  
+  header{
+    color: white;
+  }
+  .sidebar img{
+    width: 50px;
+  }
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 30px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .btn{
+    font-size: 25px;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+    color: white;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
   }
 
-
-  #newsletter {
-    margin: 0% 5%; /* Adjust margins for newsletter on smaller screens */
-  }
 }
