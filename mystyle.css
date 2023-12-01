@@ -56,15 +56,6 @@ html, body {
   margin-left: 170px; /* Same as the width of the sidenav */
 }
 
-@media screen and (max-height: 450px) {
-  .sidebar {
-    padding-top: 15px;
-  }
-  .sidebar a {
-    font-size: 18px;
-  }
-}
-
 #firstLeftCol p{
   font-size:20px;
   margin-left:20px;
@@ -327,15 +318,6 @@ span.price {
   color: grey;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
-@media (max-width: 800px) {
-  .row {
-    flex-direction: column-reverse;
-  }
-  .col-25 {
-    margin-bottom: 20px;
-  }
-}
 
 /* Popup Fan Letter Form */
 .open-button {
@@ -427,19 +409,19 @@ span.price {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin: 0; /* Remove any default margin */
-  padding: 0; /* Remove any default padding */
+  margin: 0;
+  padding: 0;
 }
 
 .gallery-item {
-  width: 100%; /* Set the width to 100% of the screen */
-  box-sizing: border-box; /* Include padding and border in the total width */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .gallery-item img {
-  width: 100%; /* Make the image fill the container */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Remove extra space below the image */
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .slideshow-container {
@@ -621,15 +603,11 @@ span.price {
     float: right;
     color: grey;
   }
-  
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
-  @media (max-width: 800px) {
-    .row {
+  .row {
       flex-direction: column-reverse;
     }
     .col-25 {
       margin-bottom: 20px;
     }
-  }
 
 }

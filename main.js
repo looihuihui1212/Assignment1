@@ -82,7 +82,6 @@ function subscribeNewsletter(event) {
       // Display a success message
       alert("Thank you, " + name + "! You have successfully subscribed to our newsletter.");
 
-      // Optional: Clear the form after submission
       document.getElementById("subscribeForm").reset();
   } else {
       // Display an error message if the name or email is empty
